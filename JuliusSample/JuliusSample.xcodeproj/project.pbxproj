@@ -18,8 +18,6 @@
 		13C5372212E1F9FB0071E4ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C5372112E1F9FB0071E4ED /* AVFoundation.framework */; };
 		13C5372912E1FA070071E4ED /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C5372812E1FA070071E4ED /* CoreAudio.framework */; };
 		13C5373F12E1FA910071E4ED /* Julius.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C5373E12E1FA910071E4ED /* Julius.m */; };
-		13C537A812E1FFEA0071E4ED /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C5378E12E1FFEA0071E4ED /* MBProgressHUD.m */; };
-		13C537A912E1FFEA0071E4ED /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 13C5378F12E1FFEA0071E4ED /* README.mdown */; };
 		1D3623260D0F684500981E51 /* JuliusSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* JuliusSampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -28,6 +26,7 @@
 		2899E5220DE3E06400AC0155 /* JuliusSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* JuliusSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* JuliusSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* JuliusSampleViewController.m */; };
+		77A68B4D77884E0CAD1E2622 /* libPods-JuliusSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60465F72D3374419B9D24395 /* libPods-JuliusSample.a */; };
 		D9A505891A159C9600612F53 /* libjulius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505851A159C8C00612F53 /* libjulius.a */; };
 		D9A5058A1A159C9600612F53 /* libsent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505881A159C8C00612F53 /* libsent.a */; };
 		D9A505931A15A17200612F53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9A505921A15A17200612F53 /* LaunchScreen.xib */; };
@@ -63,9 +62,6 @@
 		13C5372812E1FA070071E4ED /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		13C5373D12E1FA910071E4ED /* Julius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Julius.h; sourceTree = "<group>"; };
 		13C5373E12E1FA910071E4ED /* Julius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Julius.m; sourceTree = "<group>"; };
-		13C5378D12E1FFEA0071E4ED /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		13C5378E12E1FFEA0071E4ED /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		13C5378F12E1FFEA0071E4ED /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* JuliusSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliusSampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* JuliusSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliusSampleAppDelegate.m; sourceTree = "<group>"; };
@@ -77,7 +73,9 @@
 		28D7ACF60DDB3853001CB0EB /* JuliusSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliusSampleViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* JuliusSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliusSampleViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DF9036A39904F44971DFDC9 /* Pods-JuliusSample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuliusSample.xcconfig"; path = "Pods/Pods-JuliusSample.xcconfig"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JuliusSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliusSample_Prefix.pch; sourceTree = "<group>"; };
+		60465F72D3374419B9D24395 /* libPods-JuliusSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuliusSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* JuliusSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JuliusSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D9A5057C1A159C8C00612F53 /* julius.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = julius.xcodeproj; path = ../libjulius/julius.xcodeproj; sourceTree = "<group>"; };
 		D9A505801A159C8C00612F53 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sent.xcodeproj; path = ../libsent/sent.xcodeproj; sourceTree = "<group>"; };
@@ -97,6 +95,7 @@
 				13684FCB12E0AC0D00FBF870 /* libz.dylib in Frameworks */,
 				13C5372212E1F9FB0071E4ED /* AVFoundation.framework in Frameworks */,
 				13C5372912E1FA070071E4ED /* CoreAudio.framework in Frameworks */,
+				77A68B4D77884E0CAD1E2622 /* libPods-JuliusSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,16 +176,6 @@
 			name = Julius;
 			sourceTree = "<group>";
 		};
-		13C5376612E1FFE90071E4ED /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				13C5378D12E1FFEA0071E4ED /* MBProgressHUD.h */,
-				13C5378E12E1FFEA0071E4ED /* MBProgressHUD.m */,
-				13C5378F12E1FFEA0071E4ED /* README.mdown */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +192,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2DF9036A39904F44971DFDC9 /* Pods-JuliusSample.xcconfig */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -212,7 +202,6 @@
 			children = (
 				D9A5057C1A159C8C00612F53 /* julius.xcodeproj */,
 				D9A505801A159C8C00612F53 /* sent.xcodeproj */,
-				13C5376612E1FFE90071E4ED /* MBProgressHUD */,
 				13C5374012E1FA940071E4ED /* Julius */,
 				32CA4F630368D1EE00C91783 /* JuliusSample_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
@@ -241,6 +230,7 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				13C5372812E1FA070071E4ED /* CoreAudio.framework */,
 				13684FCA12E0AC0D00FBF870 /* libz.dylib */,
+				60465F72D3374419B9D24395 /* libPods-JuliusSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "JuliusSample" */;
 			buildPhases = (
+				91A5FD890F02418E95F0D7AE /* Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				7352F40F7ABE47C7AF04B0D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,13 +340,45 @@
 				13684FE812E0AC5B00FBF870 /* hmmdefs_ptm_gid.binhmm in Resources */,
 				13684FE912E0AC5B00FBF870 /* logicalTri in Resources */,
 				13684FEB12E0AC9900FBF870 /* light.jconf in Resources */,
-				13C537A912E1FFEA0071E4ED /* README.mdown in Resources */,
 				D9A505931A15A17200612F53 /* LaunchScreen.xib in Resources */,
 				130F837512E33E9000488D19 /* fast.jconf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7352F40F7ABE47C7AF04B0D6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-JuliusSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A5FD890F02418E95F0D7AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -365,7 +389,6 @@
 				1D3623260D0F684500981E51 /* JuliusSampleAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* JuliusSampleViewController.m in Sources */,
 				13C5373F12E1FA910071E4ED /* Julius.m in Sources */,
-				13C537A812E1FFEA0071E4ED /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +397,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF9036A39904F44971DFDC9 /* Pods-JuliusSample.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -396,6 +420,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF9036A39904F44971DFDC9 /* Pods-JuliusSample.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -422,7 +447,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
@@ -437,7 +462,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
