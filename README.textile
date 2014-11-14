@@ -3,7 +3,7 @@ h1. 音声認識エンジンJulius on iPhone
 音声認識エンジン Julius を iPhone 上で利用するサンプルアプリケーションです。
 Julius を Cocoa Touch Static Libaray としてビルドしています。
 
-!/FLCLjp/iPhone-julius/raw/master/screenshot.png!
+!/screenshot.png!
 
 h2. 注意
 
@@ -11,19 +11,10 @@ Juliusにはオーディオデバイスから音声認識を行う機能があ�
 
 h2. ビルド方法
 
-h3. xcode 4
+h3. Xcode 6
 
-# JuliusSample/JuliusSample.xcodeproj を開きます。
+# Open JuliusSample/JuliusSample.xcworkspace
 # ビルドターゲットで JuliusSample を選びビルドします。
-
-h3. xcode 3
-
-# sent/sent.xcodeproj を開きます。
-# ターゲット（Device/Simulator）、構成を選びビルドします。
-# julius/julius.xcodeproj を開きます。
-# 先ほどビルドしたものと同じターゲット、構成でビルドします。
-# JuliusSample/JuliusSample.xcodeproj を開きます。
-# 先ほどビルドしたものと同じターゲット、構成でビルドします。
 
 h2. ライセンス
 
