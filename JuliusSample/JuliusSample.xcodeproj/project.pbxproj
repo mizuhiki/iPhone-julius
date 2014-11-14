@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		130F837512E33E9000488D19 /* fast.jconf in Resources */ = {isa = PBXBuildFile; fileRef = 130F837412E33E9000488D19 /* fast.jconf */; };
 		13684FCB12E0AC0D00FBF870 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13684FCA12E0AC0D00FBF870 /* libz.dylib */; };
-		13684FD812E0AC2900FBF870 /* libsent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13684FD112E0AC1A00FBF870 /* libsent.a */; };
-		13684FD912E0AC2C00FBF870 /* libjulius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13684FD712E0AC2300FBF870 /* libjulius.a */; };
 		13684FE512E0AC5B00FBF870 /* web.60k.8-8.bingramv4.gz in Resources */ = {isa = PBXBuildFile; fileRef = 13684FDE12E0AC5B00FBF870 /* web.60k.8-8.bingramv4.gz */; };
 		13684FE612E0AC5B00FBF870 /* web.60k.htkdic in Resources */ = {isa = PBXBuildFile; fileRef = 13684FDF12E0AC5B00FBF870 /* web.60k.htkdic */; };
 		13684FE712E0AC5B00FBF870 /* hmmdefs_monof_mix16_gid.binhmm in Resources */ = {isa = PBXBuildFile; fileRef = 13684FE112E0AC5B00FBF870 /* hmmdefs_monof_mix16_gid.binhmm */; };
@@ -30,30 +28,30 @@
 		2899E5220DE3E06400AC0155 /* JuliusSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* JuliusSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* JuliusSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* JuliusSampleViewController.m */; };
+		D9A505891A159C9600612F53 /* libjulius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505851A159C8C00612F53 /* libjulius.a */; };
+		D9A5058A1A159C9600612F53 /* libsent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505881A159C8C00612F53 /* libsent.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13684FD012E0AC1A00FBF870 /* PBXContainerItemProxy */ = {
+		D9A505841A159C8C00612F53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13684FCC12E0AC1900FBF870 /* sent.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = sent;
-		};
-		13684FD612E0AC2300FBF870 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13684FD212E0AC2300FBF870 /* julius.xcodeproj */;
+			containerPortal = D9A5057C1A159C8C00612F53 /* julius.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = julius;
+		};
+		D9A505871A159C8C00612F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A505801A159C8C00612F53 /* sent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = sent;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		130F837412E33E9000488D19 /* fast.jconf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fast.jconf; sourceTree = "<group>"; };
 		13684FCA12E0AC0D00FBF870 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		13684FCC12E0AC1900FBF870 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sent.xcodeproj; path = ../sent/sent.xcodeproj; sourceTree = SOURCE_ROOT; };
-		13684FD212E0AC2300FBF870 /* julius.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = julius.xcodeproj; path = ../julius/julius.xcodeproj; sourceTree = SOURCE_ROOT; };
 		13684FDE12E0AC5B00FBF870 /* web.60k.8-8.bingramv4.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "web.60k.8-8.bingramv4.gz"; sourceTree = "<group>"; };
 		13684FDF12E0AC5B00FBF870 /* web.60k.htkdic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.60k.htkdic; sourceTree = "<group>"; };
 		13684FE112E0AC5B00FBF870 /* hmmdefs_monof_mix16_gid.binhmm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hmmdefs_monof_mix16_gid.binhmm; sourceTree = "<group>"; };
@@ -80,6 +78,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JuliusSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliusSample_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* JuliusSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JuliusSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D9A5057C1A159C8C00612F53 /* julius.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = julius.xcodeproj; path = ../libjulius/julius.xcodeproj; sourceTree = "<group>"; };
+		D9A505801A159C8C00612F53 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sent.xcodeproj; path = ../libsent/sent.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A5058A1A159C9600612F53 /* libsent.a in Frameworks */,
+				D9A505891A159C9600612F53 /* libjulius.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				13684FCB12E0AC0D00FBF870 /* libz.dylib in Frameworks */,
-				13684FD812E0AC2900FBF870 /* libsent.a in Frameworks */,
-				13684FD912E0AC2C00FBF870 /* libjulius.a in Frameworks */,
 				13C5372212E1F9FB0071E4ED /* AVFoundation.framework in Frameworks */,
 				13C5372912E1FA070071E4ED /* CoreAudio.framework in Frameworks */,
 			);
@@ -135,22 +135,6 @@
 				2899E5210DE3E06400AC0155 /* JuliusSampleViewController.xib */,
 			);
 			name = xib;
-			sourceTree = "<group>";
-		};
-		13684FCD12E0AC1A00FBF870 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13684FD112E0AC1A00FBF870 /* libsent.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		13684FD312E0AC2300FBF870 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13684FD712E0AC2300FBF870 /* libjulius.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		13684FDB12E0AC5A00FBF870 /* model */ = {
@@ -223,9 +207,9 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D9A5057C1A159C8C00612F53 /* julius.xcodeproj */,
+				D9A505801A159C8C00612F53 /* sent.xcodeproj */,
 				13C5376612E1FFE90071E4ED /* MBProgressHUD */,
-				13684FCC12E0AC1900FBF870 /* sent.xcodeproj */,
-				13684FD212E0AC2300FBF870 /* julius.xcodeproj */,
 				13C5374012E1FA940071E4ED /* Julius */,
 				32CA4F630368D1EE00C91783 /* JuliusSample_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
@@ -258,6 +242,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9A5057D1A159C8C00612F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9A505851A159C8C00612F53 /* libjulius.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9A505811A159C8C00612F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9A505881A159C8C00612F53 /* libsent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +283,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JuliusSample" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -297,12 +299,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 13684FD312E0AC2300FBF870 /* Products */;
-					ProjectRef = 13684FD212E0AC2300FBF870 /* julius.xcodeproj */;
+					ProductGroup = D9A5057D1A159C8C00612F53 /* Products */;
+					ProjectRef = D9A5057C1A159C8C00612F53 /* julius.xcodeproj */;
 				},
 				{
-					ProductGroup = 13684FCD12E0AC1A00FBF870 /* Products */;
-					ProjectRef = 13684FCC12E0AC1900FBF870 /* sent.xcodeproj */;
+					ProductGroup = D9A505811A159C8C00612F53 /* Products */;
+					ProjectRef = D9A505801A159C8C00612F53 /* sent.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -313,18 +315,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		13684FD112E0AC1A00FBF870 /* libsent.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsent.a;
-			remoteRef = 13684FD012E0AC1A00FBF870 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13684FD712E0AC2300FBF870 /* libjulius.a */ = {
+		D9A505851A159C8C00612F53 /* libjulius.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libjulius.a;
-			remoteRef = 13684FD612E0AC2300FBF870 /* PBXContainerItemProxy */;
+			remoteRef = D9A505841A159C8C00612F53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9A505881A159C8C00612F53 /* libsent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsent.a;
+			remoteRef = D9A505871A159C8C00612F53 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -369,12 +371,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = JuliusSample_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../libjulius/include",
+					"$(PROJECT_DIR)/../libsent/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libjulius/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libsent/include",
+				);
 				INFOPLIST_FILE = "JuliusSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = JuliusSample;
 			};
 			name = Debug;
@@ -383,10 +394,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = JuliusSample_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../libjulius/include",
+					"$(PROJECT_DIR)/../libsent/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libjulius/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libsent/include",
+				);
 				INFOPLIST_FILE = "JuliusSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = JuliusSample;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -395,15 +415,13 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					../sent,
-					../julius,
-				);
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -412,15 +430,13 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					../sent,
-					../julius,
-				);
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
