@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13684E8212E0A8F100FBF870 /* libsent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13684E8112E0A8EF00FBF870 /* libsent.a */; };
+		AA747D9F0F9514B9006C5449 /* julius_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* julius_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D922B4F11A1458080037C26B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D922B4EF1A1458080037C26B /* config.h */; };
+		D922B4F21A1458080037C26B /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = D922B4F01A1458080037C26B /* version.c */; };
+		D97A10A01A14489600D0ED7F /* acconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10641A14489600D0ED7F /* acconfig.h */; };
+		D97A10A11A14489600D0ED7F /* beam.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10651A14489600D0ED7F /* beam.h */; };
+		D97A10A21A14489600D0ED7F /* callback.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10661A14489600D0ED7F /* callback.h */; };
+		D97A10A31A14489600D0ED7F /* define.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10681A14489600D0ED7F /* define.h */; };
+		D97A10A41A14489600D0ED7F /* extern.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10691A14489600D0ED7F /* extern.h */; };
+		D97A10A51A14489600D0ED7F /* global.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106A1A14489600D0ED7F /* global.h */; };
+		D97A10A61A14489600D0ED7F /* graph.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106B1A14489600D0ED7F /* graph.h */; };
+		D97A10A71A14489600D0ED7F /* jconf.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106C1A14489600D0ED7F /* jconf.h */; };
+		D97A10A81A14489600D0ED7F /* jfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106D1A14489600D0ED7F /* jfunc.h */; };
+		D97A10A91A14489600D0ED7F /* julius.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106E1A14489600D0ED7F /* julius.h */; };
+		D97A10AA1A14489600D0ED7F /* juliuslib.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A106F1A14489600D0ED7F /* juliuslib.h */; };
+		D97A10AB1A14489600D0ED7F /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10701A14489600D0ED7F /* misc.h */; };
+		D97A10AC1A14489600D0ED7F /* multi-gram.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10711A14489600D0ED7F /* multi-gram.h */; };
+		D97A10AD1A14489600D0ED7F /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10721A14489600D0ED7F /* plugin.h */; };
+		D97A10AE1A14489600D0ED7F /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10731A14489600D0ED7F /* recog.h */; };
+		D97A10AF1A14489600D0ED7F /* search.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10741A14489600D0ED7F /* search.h */; };
+		D97A10B01A14489600D0ED7F /* trellis.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10751A14489600D0ED7F /* trellis.h */; };
+		D97A10B11A14489600D0ED7F /* useropt.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10761A14489600D0ED7F /* useropt.h */; };
+		D97A10B21A14489600D0ED7F /* wchmm.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10771A14489600D0ED7F /* wchmm.h */; };
+		D97A10B31A14489600D0ED7F /* adin-cut.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10791A14489600D0ED7F /* adin-cut.c */; };
+		D97A10B41A14489600D0ED7F /* backtrellis.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107A1A14489600D0ED7F /* backtrellis.c */; };
+		D97A10B51A14489600D0ED7F /* beam.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107B1A14489600D0ED7F /* beam.c */; };
+		D97A10B61A14489600D0ED7F /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107C1A14489600D0ED7F /* callback.c */; };
+		D97A10B71A14489600D0ED7F /* confnet.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107D1A14489600D0ED7F /* confnet.c */; };
+		D97A10B81A14489600D0ED7F /* default.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107E1A14489600D0ED7F /* default.c */; };
+		D97A10B91A14489600D0ED7F /* dfa_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A107F1A14489600D0ED7F /* dfa_decode.c */; };
+		D97A10BA1A14489600D0ED7F /* factoring_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10801A14489600D0ED7F /* factoring_sub.c */; };
+		D97A10BB1A14489600D0ED7F /* gmm.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10811A14489600D0ED7F /* gmm.c */; };
+		D97A10BC1A14489600D0ED7F /* gramlist.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10821A14489600D0ED7F /* gramlist.c */; };
+		D97A10BD1A14489600D0ED7F /* graphout.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10831A14489600D0ED7F /* graphout.c */; };
+		D97A10BE1A14489600D0ED7F /* hmm_check.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10841A14489600D0ED7F /* hmm_check.c */; };
+		D97A10BF1A14489600D0ED7F /* instance.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10851A14489600D0ED7F /* instance.c */; };
+		D97A10C01A14489600D0ED7F /* jfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10861A14489600D0ED7F /* jfunc.c */; };
+		D97A10C11A14489600D0ED7F /* m_adin.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10871A14489600D0ED7F /* m_adin.c */; };
+		D97A10C21A14489600D0ED7F /* m_chkparam.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10881A14489600D0ED7F /* m_chkparam.c */; };
+		D97A10C31A14489600D0ED7F /* m_fusion.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10891A14489600D0ED7F /* m_fusion.c */; };
+		D97A10C41A14489600D0ED7F /* m_info.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108A1A14489600D0ED7F /* m_info.c */; };
+		D97A10C51A14489600D0ED7F /* m_jconf.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108B1A14489600D0ED7F /* m_jconf.c */; };
+		D97A10C61A14489600D0ED7F /* m_options.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108C1A14489600D0ED7F /* m_options.c */; };
+		D97A10C71A14489600D0ED7F /* m_usage.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108D1A14489600D0ED7F /* m_usage.c */; };
+		D97A10C81A14489600D0ED7F /* mbr.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108E1A14489600D0ED7F /* mbr.c */; };
+		D97A10C91A14489600D0ED7F /* multi-gram.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A108F1A14489600D0ED7F /* multi-gram.c */; };
+		D97A10CA1A14489600D0ED7F /* ngram_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10901A14489600D0ED7F /* ngram_decode.c */; };
+		D97A10CB1A14489600D0ED7F /* outprob_style.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10911A14489600D0ED7F /* outprob_style.c */; };
+		D97A10CC1A14489600D0ED7F /* pass1.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10921A14489600D0ED7F /* pass1.c */; };
+		D97A10CD1A14489600D0ED7F /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10931A14489600D0ED7F /* plugin.c */; };
+		D97A10CE1A14489600D0ED7F /* realtime-1stpass.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10941A14489600D0ED7F /* realtime-1stpass.c */; };
+		D97A10CF1A14489600D0ED7F /* recogmain.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10951A14489600D0ED7F /* recogmain.c */; };
+		D97A10D01A14489600D0ED7F /* search_bestfirst_main.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10961A14489600D0ED7F /* search_bestfirst_main.c */; };
+		D97A10D11A14489600D0ED7F /* search_bestfirst_v1.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10971A14489600D0ED7F /* search_bestfirst_v1.c */; };
+		D97A10D21A14489600D0ED7F /* search_bestfirst_v2.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10981A14489600D0ED7F /* search_bestfirst_v2.c */; };
+		D97A10D31A14489600D0ED7F /* spsegment.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A10991A14489600D0ED7F /* spsegment.c */; };
+		D97A10D41A14489600D0ED7F /* useropt.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A109A1A14489600D0ED7F /* useropt.c */; };
+		D97A10D51A14489600D0ED7F /* wav2mfcc.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A109C1A14489600D0ED7F /* wav2mfcc.c */; };
+		D97A10D61A14489600D0ED7F /* wchmm.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A109D1A14489600D0ED7F /* wchmm.c */; };
+		D97A10D71A14489600D0ED7F /* wchmm_check.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A109E1A14489600D0ED7F /* wchmm_check.c */; };
+		D97A10D81A14489600D0ED7F /* word_align.c in Sources */ = {isa = PBXBuildFile; fileRef = D97A109F1A14489600D0ED7F /* word_align.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13684E8012E0A8EF00FBF870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13684E7C12E0A8EF00FBF870 /* sent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = sent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13684E7C12E0A8EF00FBF870 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sent.xcodeproj; path = ../sent/sent.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AA747D9E0F9514B9006C5449 /* julius_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = julius_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libjulius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjulius.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D922B4EF1A1458080037C26B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = include/julius/config.h; sourceTree = "<group>"; };
+		D922B4F01A1458080037C26B /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = include/julius/version.c; sourceTree = "<group>"; };
+		D97A10641A14489600D0ED7F /* acconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acconfig.h; sourceTree = "<group>"; };
+		D97A10651A14489600D0ED7F /* beam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beam.h; sourceTree = "<group>"; };
+		D97A10661A14489600D0ED7F /* callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
+		D97A10671A14489600D0ED7F /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		D97A10681A14489600D0ED7F /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		D97A10691A14489600D0ED7F /* extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extern.h; sourceTree = "<group>"; };
+		D97A106A1A14489600D0ED7F /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		D97A106B1A14489600D0ED7F /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		D97A106C1A14489600D0ED7F /* jconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconf.h; sourceTree = "<group>"; };
+		D97A106D1A14489600D0ED7F /* jfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jfunc.h; sourceTree = "<group>"; };
+		D97A106E1A14489600D0ED7F /* julius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = julius.h; sourceTree = "<group>"; };
+		D97A106F1A14489600D0ED7F /* juliuslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juliuslib.h; sourceTree = "<group>"; };
+		D97A10701A14489600D0ED7F /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		D97A10711A14489600D0ED7F /* multi-gram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "multi-gram.h"; sourceTree = "<group>"; };
+		D97A10721A14489600D0ED7F /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		D97A10731A14489600D0ED7F /* recog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recog.h; sourceTree = "<group>"; };
+		D97A10741A14489600D0ED7F /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		D97A10751A14489600D0ED7F /* trellis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trellis.h; sourceTree = "<group>"; };
+		D97A10761A14489600D0ED7F /* useropt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = useropt.h; sourceTree = "<group>"; };
+		D97A10771A14489600D0ED7F /* wchmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wchmm.h; sourceTree = "<group>"; };
+		D97A10791A14489600D0ED7F /* adin-cut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "adin-cut.c"; sourceTree = "<group>"; };
+		D97A107A1A14489600D0ED7F /* backtrellis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = backtrellis.c; sourceTree = "<group>"; };
+		D97A107B1A14489600D0ED7F /* beam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = beam.c; sourceTree = "<group>"; };
+		D97A107C1A14489600D0ED7F /* callback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = callback.c; sourceTree = "<group>"; };
+		D97A107D1A14489600D0ED7F /* confnet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = confnet.c; sourceTree = "<group>"; };
+		D97A107E1A14489600D0ED7F /* default.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = default.c; sourceTree = "<group>"; };
+		D97A107F1A14489600D0ED7F /* dfa_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dfa_decode.c; sourceTree = "<group>"; };
+		D97A10801A14489600D0ED7F /* factoring_sub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = factoring_sub.c; sourceTree = "<group>"; };
+		D97A10811A14489600D0ED7F /* gmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gmm.c; sourceTree = "<group>"; };
+		D97A10821A14489600D0ED7F /* gramlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gramlist.c; sourceTree = "<group>"; };
+		D97A10831A14489600D0ED7F /* graphout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graphout.c; sourceTree = "<group>"; };
+		D97A10841A14489600D0ED7F /* hmm_check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmm_check.c; sourceTree = "<group>"; };
+		D97A10851A14489600D0ED7F /* instance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = instance.c; sourceTree = "<group>"; };
+		D97A10861A14489600D0ED7F /* jfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jfunc.c; sourceTree = "<group>"; };
+		D97A10871A14489600D0ED7F /* m_adin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_adin.c; sourceTree = "<group>"; };
+		D97A10881A14489600D0ED7F /* m_chkparam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_chkparam.c; sourceTree = "<group>"; };
+		D97A10891A14489600D0ED7F /* m_fusion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_fusion.c; sourceTree = "<group>"; };
+		D97A108A1A14489600D0ED7F /* m_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_info.c; sourceTree = "<group>"; };
+		D97A108B1A14489600D0ED7F /* m_jconf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_jconf.c; sourceTree = "<group>"; };
+		D97A108C1A14489600D0ED7F /* m_options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_options.c; sourceTree = "<group>"; };
+		D97A108D1A14489600D0ED7F /* m_usage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_usage.c; sourceTree = "<group>"; };
+		D97A108E1A14489600D0ED7F /* mbr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mbr.c; sourceTree = "<group>"; };
+		D97A108F1A14489600D0ED7F /* multi-gram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "multi-gram.c"; sourceTree = "<group>"; };
+		D97A10901A14489600D0ED7F /* ngram_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ngram_decode.c; sourceTree = "<group>"; };
+		D97A10911A14489600D0ED7F /* outprob_style.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = outprob_style.c; sourceTree = "<group>"; };
+		D97A10921A14489600D0ED7F /* pass1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pass1.c; sourceTree = "<group>"; };
+		D97A10931A14489600D0ED7F /* plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plugin.c; sourceTree = "<group>"; };
+		D97A10941A14489600D0ED7F /* realtime-1stpass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "realtime-1stpass.c"; sourceTree = "<group>"; };
+		D97A10951A14489600D0ED7F /* recogmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recogmain.c; sourceTree = "<group>"; };
+		D97A10961A14489600D0ED7F /* search_bestfirst_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search_bestfirst_main.c; sourceTree = "<group>"; };
+		D97A10971A14489600D0ED7F /* search_bestfirst_v1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search_bestfirst_v1.c; sourceTree = "<group>"; };
+		D97A10981A14489600D0ED7F /* search_bestfirst_v2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search_bestfirst_v2.c; sourceTree = "<group>"; };
+		D97A10991A14489600D0ED7F /* spsegment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spsegment.c; sourceTree = "<group>"; };
+		D97A109A1A14489600D0ED7F /* useropt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = useropt.c; sourceTree = "<group>"; };
+		D97A109B1A14489600D0ED7F /* version.c.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.c.in; sourceTree = "<group>"; };
+		D97A109C1A14489600D0ED7F /* wav2mfcc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav2mfcc.c; sourceTree = "<group>"; };
+		D97A109D1A14489600D0ED7F /* wchmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wchmm.c; sourceTree = "<group>"; };
+		D97A109E1A14489600D0ED7F /* wchmm_check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wchmm_check.c; sourceTree = "<group>"; };
+		D97A109F1A14489600D0ED7F /* word_align.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = word_align.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				13684E8212E0A8F100FBF870 /* libsent.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libjulius.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* julius */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = julius;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D922B4EF1A1458080037C26B /* config.h */,
+				D922B4F01A1458080037C26B /* version.c */,
+				D97A10621A14489600D0ED7F /* include */,
+				D97A10781A14489600D0ED7F /* src */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		13684E7D12E0A8EF00FBF870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13684E8112E0A8EF00FBF870 /* libsent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				13684E7C12E0A8EF00FBF870 /* sent.xcodeproj */,
+				AA747D9E0F9514B9006C5449 /* julius_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D97A10621A14489600D0ED7F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D97A10631A14489600D0ED7F /* julius */,
+			);
+			name = include;
+			path = "../julius-4.3.1/libjulius/include";
+			sourceTree = "<group>";
+		};
+		D97A10631A14489600D0ED7F /* julius */ = {
+			isa = PBXGroup;
+			children = (
+				D97A10641A14489600D0ED7F /* acconfig.h */,
+				D97A10651A14489600D0ED7F /* beam.h */,
+				D97A10661A14489600D0ED7F /* callback.h */,
+				D97A10671A14489600D0ED7F /* config.h.in */,
+				D97A10681A14489600D0ED7F /* define.h */,
+				D97A10691A14489600D0ED7F /* extern.h */,
+				D97A106A1A14489600D0ED7F /* global.h */,
+				D97A106B1A14489600D0ED7F /* graph.h */,
+				D97A106C1A14489600D0ED7F /* jconf.h */,
+				D97A106D1A14489600D0ED7F /* jfunc.h */,
+				D97A106E1A14489600D0ED7F /* julius.h */,
+				D97A106F1A14489600D0ED7F /* juliuslib.h */,
+				D97A10701A14489600D0ED7F /* misc.h */,
+				D97A10711A14489600D0ED7F /* multi-gram.h */,
+				D97A10721A14489600D0ED7F /* plugin.h */,
+				D97A10731A14489600D0ED7F /* recog.h */,
+				D97A10741A14489600D0ED7F /* search.h */,
+				D97A10751A14489600D0ED7F /* trellis.h */,
+				D97A10761A14489600D0ED7F /* useropt.h */,
+				D97A10771A14489600D0ED7F /* wchmm.h */,
+			);
+			path = julius;
+			sourceTree = "<group>";
+		};
+		D97A10781A14489600D0ED7F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D97A10791A14489600D0ED7F /* adin-cut.c */,
+				D97A107A1A14489600D0ED7F /* backtrellis.c */,
+				D97A107B1A14489600D0ED7F /* beam.c */,
+				D97A107C1A14489600D0ED7F /* callback.c */,
+				D97A107D1A14489600D0ED7F /* confnet.c */,
+				D97A107E1A14489600D0ED7F /* default.c */,
+				D97A107F1A14489600D0ED7F /* dfa_decode.c */,
+				D97A10801A14489600D0ED7F /* factoring_sub.c */,
+				D97A10811A14489600D0ED7F /* gmm.c */,
+				D97A10821A14489600D0ED7F /* gramlist.c */,
+				D97A10831A14489600D0ED7F /* graphout.c */,
+				D97A10841A14489600D0ED7F /* hmm_check.c */,
+				D97A10851A14489600D0ED7F /* instance.c */,
+				D97A10861A14489600D0ED7F /* jfunc.c */,
+				D97A10871A14489600D0ED7F /* m_adin.c */,
+				D97A10881A14489600D0ED7F /* m_chkparam.c */,
+				D97A10891A14489600D0ED7F /* m_fusion.c */,
+				D97A108A1A14489600D0ED7F /* m_info.c */,
+				D97A108B1A14489600D0ED7F /* m_jconf.c */,
+				D97A108C1A14489600D0ED7F /* m_options.c */,
+				D97A108D1A14489600D0ED7F /* m_usage.c */,
+				D97A108E1A14489600D0ED7F /* mbr.c */,
+				D97A108F1A14489600D0ED7F /* multi-gram.c */,
+				D97A10901A14489600D0ED7F /* ngram_decode.c */,
+				D97A10911A14489600D0ED7F /* outprob_style.c */,
+				D97A10921A14489600D0ED7F /* pass1.c */,
+				D97A10931A14489600D0ED7F /* plugin.c */,
+				D97A10941A14489600D0ED7F /* realtime-1stpass.c */,
+				D97A10951A14489600D0ED7F /* recogmain.c */,
+				D97A10961A14489600D0ED7F /* search_bestfirst_main.c */,
+				D97A10971A14489600D0ED7F /* search_bestfirst_v1.c */,
+				D97A10981A14489600D0ED7F /* search_bestfirst_v2.c */,
+				D97A10991A14489600D0ED7F /* spsegment.c */,
+				D97A109A1A14489600D0ED7F /* useropt.c */,
+				D97A109B1A14489600D0ED7F /* version.c.in */,
+				D97A109C1A14489600D0ED7F /* wav2mfcc.c */,
+				D97A109D1A14489600D0ED7F /* wchmm.c */,
+				D97A109E1A14489600D0ED7F /* wchmm_check.c */,
+				D97A109F1A14489600D0ED7F /* word_align.c */,
+			);
+			name = src;
+			path = "../julius-4.3.1/libjulius/src";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97A10B11A14489600D0ED7F /* useropt.h in Headers */,
+				D97A10AB1A14489600D0ED7F /* misc.h in Headers */,
+				D97A10A71A14489600D0ED7F /* jconf.h in Headers */,
+				D97A10A01A14489600D0ED7F /* acconfig.h in Headers */,
+				D97A10A21A14489600D0ED7F /* callback.h in Headers */,
+				D97A10A81A14489600D0ED7F /* jfunc.h in Headers */,
+				D97A10AA1A14489600D0ED7F /* juliuslib.h in Headers */,
+				D97A10A51A14489600D0ED7F /* global.h in Headers */,
+				D97A10AC1A14489600D0ED7F /* multi-gram.h in Headers */,
+				D97A10B01A14489600D0ED7F /* trellis.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* julius_Prefix.pch in Headers */,
+				D97A10A31A14489600D0ED7F /* define.h in Headers */,
+				D97A10AD1A14489600D0ED7F /* plugin.h in Headers */,
+				D97A10B21A14489600D0ED7F /* wchmm.h in Headers */,
+				D97A10A41A14489600D0ED7F /* extern.h in Headers */,
+				D97A10A11A14489600D0ED7F /* beam.h in Headers */,
+				D97A10AE1A14489600D0ED7F /* recog.h in Headers */,
+				D97A10AF1A14489600D0ED7F /* search.h in Headers */,
+				D97A10A91A14489600D0ED7F /* julius.h in Headers */,
+				D97A10A61A14489600D0ED7F /* graph.h in Headers */,
+				D922B4F11A1458080037C26B /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* julius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "julius" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = julius;
+			productName = julius;
+			productReference = D2AAC07E0554694100DB518D /* libjulius.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "julius" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* julius */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 13684E7D12E0A8EF00FBF870 /* Products */;
+					ProjectRef = 13684E7C12E0A8EF00FBF870 /* sent.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* julius */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		13684E8112E0A8EF00FBF870 /* libsent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsent.a;
+			remoteRef = 13684E8012E0A8EF00FBF870 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97A10D61A14489600D0ED7F /* wchmm.c in Sources */,
+				D97A10C31A14489600D0ED7F /* m_fusion.c in Sources */,
+				D97A10C51A14489600D0ED7F /* m_jconf.c in Sources */,
+				D97A10C21A14489600D0ED7F /* m_chkparam.c in Sources */,
+				D97A10C11A14489600D0ED7F /* m_adin.c in Sources */,
+				D97A10BC1A14489600D0ED7F /* gramlist.c in Sources */,
+				D97A10BB1A14489600D0ED7F /* gmm.c in Sources */,
+				D97A10CF1A14489600D0ED7F /* recogmain.c in Sources */,
+				D97A10CD1A14489600D0ED7F /* plugin.c in Sources */,
+				D97A10B61A14489600D0ED7F /* callback.c in Sources */,
+				D922B4F21A1458080037C26B /* version.c in Sources */,
+				D97A10D71A14489600D0ED7F /* wchmm_check.c in Sources */,
+				D97A10D01A14489600D0ED7F /* search_bestfirst_main.c in Sources */,
+				D97A10D41A14489600D0ED7F /* useropt.c in Sources */,
+				D97A10CA1A14489600D0ED7F /* ngram_decode.c in Sources */,
+				D97A10BE1A14489600D0ED7F /* hmm_check.c in Sources */,
+				D97A10B81A14489600D0ED7F /* default.c in Sources */,
+				D97A10B41A14489600D0ED7F /* backtrellis.c in Sources */,
+				D97A10D31A14489600D0ED7F /* spsegment.c in Sources */,
+				D97A10B71A14489600D0ED7F /* confnet.c in Sources */,
+				D97A10D81A14489600D0ED7F /* word_align.c in Sources */,
+				D97A10C81A14489600D0ED7F /* mbr.c in Sources */,
+				D97A10B91A14489600D0ED7F /* dfa_decode.c in Sources */,
+				D97A10C41A14489600D0ED7F /* m_info.c in Sources */,
+				D97A10B51A14489600D0ED7F /* beam.c in Sources */,
+				D97A10BF1A14489600D0ED7F /* instance.c in Sources */,
+				D97A10CE1A14489600D0ED7F /* realtime-1stpass.c in Sources */,
+				D97A10C91A14489600D0ED7F /* multi-gram.c in Sources */,
+				D97A10C71A14489600D0ED7F /* m_usage.c in Sources */,
+				D97A10D11A14489600D0ED7F /* search_bestfirst_v1.c in Sources */,
+				D97A10D21A14489600D0ED7F /* search_bestfirst_v2.c in Sources */,
+				D97A10C01A14489600D0ED7F /* jfunc.c in Sources */,
+				D97A10D51A14489600D0ED7F /* wav2mfcc.c in Sources */,
+				D97A10C61A14489600D0ED7F /* m_options.c in Sources */,
+				D97A10BD1A14489600D0ED7F /* graphout.c in Sources */,
+				D97A10CC1A14489600D0ED7F /* pass1.c in Sources */,
+				D97A10CB1A14489600D0ED7F /* outprob_style.c in Sources */,
+				D97A10BA1A14489600D0ED7F /* factoring_sub.c in Sources */,
+				D97A10B31A14489600D0ED7F /* adin-cut.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/julius.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = julius_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/include/",
+					"$(PROJECT_DIR)/../libsent/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libsent/include",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = julius;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/julius.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = julius_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/include/",
+					"$(PROJECT_DIR)/../libsent/include",
+					"$(PROJECT_DIR)/../julius-4.3.1/libsent/include",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = julius;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "julius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "julius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
