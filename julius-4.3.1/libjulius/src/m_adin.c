@@ -148,6 +148,7 @@ adin_select(ADIn *a, int source, int dev)
     a->enable_thread 	   = TRUE;
     break;
 #endif
+#ifdef USE_ADINNET
   case SP_ADINNET:
     /* adinnet network input */
     a->ad_standby 	   = adin_tcpip_standby;
@@ -161,6 +162,8 @@ adin_select(ADIn *a, int source, int dev)
     a->silence_cut_default = FALSE;
     a->enable_thread 	   = FALSE;
     break;
+#endif
+#ifdef USE_STDIN
   case SP_STDIN:
     /* standard input */
     a->ad_standby 	   = adin_stdin_standby;
@@ -174,6 +177,7 @@ adin_select(ADIn *a, int source, int dev)
     a->silence_cut_default = FALSE;
     a->enable_thread 	   = FALSE;
     break;
+#endif
   case SP_MFCFILE:
   case SP_OUTPROBFILE:
     /* MFC_FILE is not waveform, so special handling on main routine should be done */
