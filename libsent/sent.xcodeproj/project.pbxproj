@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13684D2A12E0A74900FBF870 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13684D2912E0A74900FBF870 /* libz.dylib */; };
 		AA747D9F0F9514B9006C5449 /* sent_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* sent_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		D97A11BF1A14497200D0ED7F /* adin.h in Headers */ = {isa = PBXBuildFile; fileRef = D97A10DD1A14497200D0ED7F /* adin.h */; };
@@ -129,6 +128,7 @@
 		13684D2912E0A74900FBF870 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AA747D9E0F9514B9006C5449 /* sent_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sent_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1945A391CA2773A00FFD1B4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libsent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97A10DD1A14497200D0ED7F /* adin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adin.h; sourceTree = "<group>"; };
 		D97A10DE1A14497200D0ED7F /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
@@ -252,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				13684D2A12E0A74900FBF870 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +280,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1945A391CA2773A00FFD1B4 /* libz.tbd */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				13684D2912E0A74900FBF870 /* libz.dylib */,
 			);
