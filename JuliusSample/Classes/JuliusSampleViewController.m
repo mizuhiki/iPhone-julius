@@ -53,7 +53,6 @@
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	[formatter setDateFormat:@"yMMddHHmmss"];
 	NSString *fileName = [NSString stringWithFormat:@"%@.wav", [formatter stringFromDate:[NSDate date]]];
-	[formatter release];
 
 	self.filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
 
@@ -68,7 +67,7 @@
 							  [NSNumber numberWithUnsignedInt:16], AVLinearPCMBitDepthKey,
 							  nil];
 
-	self.recorder = [[[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:filePath] settings:settings error:nil] autorelease];
+	self.recorder = [[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:filePath] settings:settings error:nil];
 	recorder.delegate = self;
 
 	[recorder prepareToRecord];
@@ -91,7 +90,7 @@
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
 	if (flag) {
 		if (!HUD) {
-			self.HUD = [[[MBProgressHUD alloc] initWithView:self.view] autorelease];
+			self.HUD = [[MBProgressHUD alloc] initWithView:self.view];
 			HUD.labelText = @"Processing...";
 			[self.view addSubview:HUD];
 		}
@@ -117,15 +116,5 @@
 #pragma mark -
 #pragma mark Memory management
 
-- (void)dealloc {
-	self.recorder = nil;
-	self.julius = nil;
-    self.filePath = nil;
-	
-	self.recordButton = nil;
-	self.textView = nil;
-	self.HUD = nil;
-    [super dealloc];
-}
 
 @end

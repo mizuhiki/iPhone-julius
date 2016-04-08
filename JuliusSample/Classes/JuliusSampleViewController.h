@@ -25,12 +25,12 @@
 	BOOL processing;
 }
 
-@property (nonatomic, retain) IBOutlet UIButton *recordButton;
-@property (nonatomic, retain) IBOutlet UITextView *textView;
-@property (nonatomic, retain) MBProgressHUD *HUD;
-@property (nonatomic, retain) AVAudioRecorder *recorder;
-@property (nonatomic, retain) Julius *julius;
-@property (nonatomic, retain) NSString *filePath;
+@property (nonatomic, strong) IBOutlet UIButton *recordButton;
+@property (nonatomic, strong) IBOutlet UITextView *textView;
+@property (nonatomic, strong) MBProgressHUD *HUD;
+@property (nonatomic, strong) AVAudioRecorder *recorder;
+@property (nonatomic, strong) Julius *julius;
+@property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, assign) BOOL processing;
 
 - (IBAction)startOrStopRecording:(id)sender;

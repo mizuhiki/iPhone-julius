@@ -48,7 +48,7 @@ static void output_result(Recog *recog_, void *data) {
 
 	// Callback delegate.
 	if (data) {
-		Julius *julius = (Julius *)data;
+		Julius *julius = (__bridge Julius *)data;
 		if (julius.delegate) {
 			[julius.delegate callBackResult:[NSArray arrayWithArray:words]];
 		}
@@ -116,7 +116,7 @@ static void output_result(Recog *recog_, void *data) {
 			}
 		}
 		
-		callback_add(recog, CALLBACK_RESULT, output_result, self);
+		callback_add(recog, CALLBACK_RESULT, output_result, (__bridge void *)(self));
 	}
 	
 	return self;
@@ -148,7 +148,6 @@ static void output_result(Recog *recog_, void *data) {
 - (void)dealloc {
 	j_recog_free(recog);
 
-	[super dealloc];
 }
 
 @end
