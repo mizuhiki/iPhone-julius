@@ -45,8 +45,8 @@
 ####
 #### Audio Input
 ####
-#-input mic    			# live microphone
--input rawfile			# wavefile
+-input mic    			# live microphone
+#-input rawfile			# wavefile
 #-input mfcfile			# MFCC file (HTK Parameter file)
 #-input stdin			# waveform from standard input
 #-input adinnet			# waveform via network client

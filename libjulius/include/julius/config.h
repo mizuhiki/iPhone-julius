@@ -253,7 +253,7 @@
  */
 /* #undef ENABLE_PLUGIN */
 
-#undef USE_MIC
+#define USE_MIC
 #undef HAS_ALSA
 #undef HAS_OSS
 #undef HAS_ESD

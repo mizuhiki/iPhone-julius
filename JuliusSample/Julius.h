@@ -23,6 +23,7 @@
 @property (nonatomic, weak) id<JuliusDelegate> delegate;
 
 - (void)recognizeRawFileAtPath:(NSString *)path;
+- (void)startContinuousRecognizing;
 
 @end
 

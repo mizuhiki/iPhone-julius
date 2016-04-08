@@ -141,6 +141,22 @@ static void output_result(Recog *recog_, void *data) {
 	}
 }
 
+- (void)startContinuousRecognizing
+{
+    int ret = j_open_stream(recog, NULL);
+    if (ret == -1) {
+        NSLog(@"Error in open stream");
+        return;
+    }
+    
+    // $$$FIXME おそらく、別スレッドにして起動する必要がある
+    ret = j_recognize_stream(recog);
+    if (ret == -1) {
+        NSLog(@"Error in regocnize stream");
+        return;
+    }
+}
+
 
 #pragma mark -
 #pragma mark Memory management
