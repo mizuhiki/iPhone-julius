@@ -15,8 +15,8 @@
     [super viewDidLoad];
     
     self.julius = [[Julius alloc] init];
-//    self.julius.delegate = self;
-//    [self.julius startContinuousRecognizing];
+    self.julius.delegate = self;
+    [self.julius startContinuousRecognizing];
 }
 
 #pragma mark -

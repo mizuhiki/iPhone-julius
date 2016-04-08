@@ -36,6 +36,18 @@
 #include <sent/stddefs.h>
 #include <sent/adin.h>
 
+#include <AudioToolbox/AudioToolbox.h>
+
+static OSStatus OutputCallback(void *inRefCon,
+                               AudioUnitRenderActionFlags *ioActionFlags,
+                               const AudioTimeStamp *inTimeStamp,
+                               UInt32 inBusNumber,
+                               UInt32 inNumberFrames,
+                               AudioBufferList *ioData)
+{
+    return noErr;
+}
+
 /** 
  * Device initialization: check device capability and open for recording.
  * 
@@ -47,18 +59,40 @@
 boolean
 adin_mic_standby(int sfreq, void *dummy)
 {
-#if defined(HAS_ALSA)
-  return(adin_alsa_standby(sfreq, dummy));
-#elif defined(HAS_OSS)
-  return(adin_oss_standby(sfreq, dummy));
-#elif defined(HAS_PULSEAUDIO)
-  return(adin_pulseaudio_standby(sfreq, dummy));
-#elif defined(HAS_ESD)
-  return(adin_esd_standby(sfreq, dummy));
-#else  /* other than Linux */
-  jlog("Error: neither of pulseaudio/alsa/oss/esd device is available\n");
-  return FALSE;
-#endif
+    OSStatus status;
+    
+    AudioComponentDescription cd = { 0 };
+    cd.componentType         = kAudioUnitType_Output;
+    cd.componentSubType      = kAudioUnitSubType_RemoteIO;
+    cd.componentManufacturer = kAudioUnitManufacturer_Apple;
+    
+
+    AudioUnit outputUnit;
+    AudioComponent comp = AudioComponentFindNext(NULL, &cd);
+    status = AudioComponentInstanceNew(comp, &outputUnit);
+    
+    AURenderCallbackStruct callback = { 0 };
+    callback.inputProc = OutputCallback;
+    status = AudioUnitSetProperty(outputUnit,
+                                  kAudioUnitProperty_SetRenderCallback,
+                                  kAudioUnitScope_Global, 0,
+                                  &callback, sizeof(callback));
+    
+    AudioStreamBasicDescription outputFormat;
+    outputFormat.mSampleRate = 16000;
+    outputFormat.mFormatID = kAudioFormatLinearPCM;
+    outputFormat.mFormatFlags = kAudioFormatFlagIsPacked | kAudioFormatFlagIsSignedInteger;
+    outputFormat.mBitsPerChannel = 16;
+    outputFormat.mChannelsPerFrame = 2;
+    outputFormat.mFramesPerPacket = 1;
+    outputFormat.mBytesPerFrame = outputFormat.mBitsPerChannel / 8 * outputFormat.mChannelsPerFrame;
+    outputFormat.mBytesPerPacket = outputFormat.mBytesPerFrame * outputFormat.mFramesPerPacket;
+    status = AudioUnitSetProperty(outputUnit, kAudioUnitProperty_StreamFormat,
+                                  kAudioUnitScope_Input, 0, &outputFormat, sizeof(AudioStreamBasicDescription));
+
+    status = AudioOutputUnitStart(outputUnit);
+    
+    return TRUE;
 }
 
 /** 
@@ -71,18 +105,8 @@ adin_mic_standby(int sfreq, void *dummy)
 boolean
 adin_mic_begin(char *pathname)
 {
-#if defined(HAS_ALSA)
-  return(adin_alsa_begin(pathname));
-#elif defined(HAS_OSS)
-  return(adin_oss_begin(pathname));
-#elif defined(HAS_PULSEAUDIO)
-  return(adin_pulseaudio_begin(pathname));
-#elif defined(HAS_ESD)
-  return(adin_esd_begin(pathname));
-#else  /* other than Linux */
-  jlog("Error: neither of pulseaudio/alsa/oss/esd device is available\n");
-  return FALSE;
-#endif
+    printf("adin_mic_begin()\n");
+    return TRUE;
 }
 
 /** 
@@ -93,18 +117,8 @@ adin_mic_begin(char *pathname)
 boolean
 adin_mic_end()
 {
-#if defined(HAS_ALSA)
-  return(adin_alsa_end());
-#elif defined(HAS_OSS)
-  return(adin_oss_end());
-#elif defined(HAS_PULSEAUDIO)
-  return(adin_pulseaudio_end());
-#elif defined(HAS_ESD)
-  return(adin_esd_end());
-#else  /* other than Linux */
-  jlog("Error: neither of pulseaudio/alsa/oss/esd device is available\n");
-  return FALSE;
-#endif
+    printf("adin_mic_begin()\n");
+    return TRUE;
 }
 
 /**
@@ -122,18 +136,8 @@ adin_mic_end()
 int
 adin_mic_read(SP16 *buf, int sampnum)
 {
-#if defined(HAS_ALSA)
-  return(adin_alsa_read(buf, sampnum));
-#elif defined(HAS_OSS)
-  return(adin_oss_read(buf, sampnum));
-#elif defined(HAS_PULSEAUDIO)
-  return(adin_pulseaudio_read(buf, sampnum));
-#elif defined(HAS_ESD)
-  return(adin_esd_read(buf, sampnum));
-#else  /* other than Linux */
-  jlog("Error: neither of pulseaudio/alsa/oss/esd device is available\n");
-  return -2;
-#endif
+    printf("adin_mic_read()\n");
+    return 0;
 }
 
 /** 
@@ -144,7 +148,8 @@ adin_mic_read(SP16 *buf, int sampnum)
 boolean
 adin_mic_pause()
 {
-  return TRUE;
+    printf("adin_mic_pause()\n");
+    return TRUE;
 }
 
 /** 
@@ -155,7 +160,8 @@ adin_mic_pause()
 boolean
 adin_mic_terminate()
 {
-  return TRUE;
+    printf("adin_mic_terminate()\n");
+    return TRUE;
 }
 /** 
  * Function to resume the paused / terminated audio input
@@ -165,7 +171,8 @@ adin_mic_terminate()
 boolean
 adin_mic_resume()
 {
-  return TRUE;
+    printf("adin_mic_resume()\n");
+    return TRUE;
 }
 
 /** 
@@ -178,15 +185,5 @@ adin_mic_resume()
 char *
 adin_mic_input_name()
 {
-#if defined(HAS_ALSA)
-  return(adin_alsa_input_name());
-#elif defined(HAS_OSS)
-  return(adin_oss_input_name());
-#elif defined(HAS_PULSEAUDIO)
-  return(adin_pulseaudio_input_name());
-#elif defined(HAS_ESD)
-  return(adin_esd_input_name());
-#else  /* other than Linux */
-  return("Error: neither of pulseaudio/alsa/oss/esd device is available\n");
-#endif
+    return "ios_coreaudio";
 }

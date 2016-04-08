@@ -26,6 +26,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* JuliusSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* JuliusSampleViewController.m */; };
 		77A68B4D77884E0CAD1E2622 /* libPods-JuliusSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60465F72D3374419B9D24395 /* libPods-JuliusSample.a */; };
+		C1893D1E1CB7A9A600CCB9CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1893D1D1CB7A9A600CCB9CA /* AudioToolbox.framework */; };
 		C1945A381CA2772500FFD1B4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C1945A371CA2772500FFD1B4 /* libz.tbd */; };
 		D9A505891A159C9600612F53 /* libjulius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505851A159C8C00612F53 /* libjulius.a */; };
 		D9A5058A1A159C9600612F53 /* libsent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A505881A159C8C00612F53 /* libsent.a */; };
@@ -78,6 +79,7 @@
 		60465F72D3374419B9D24395 /* libPods-JuliusSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuliusSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* JuliusSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JuliusSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B1CCD580763B2A0A05F94498 /* Pods-JuliusSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuliusSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuliusSample/Pods-JuliusSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C1893D1D1CB7A9A600CCB9CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C1945A371CA2772500FFD1B4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D9A5057C1A159C8C00612F53 /* julius.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = julius.xcodeproj; path = ../libjulius/julius.xcodeproj; sourceTree = "<group>"; };
 		D9A505801A159C8C00612F53 /* sent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sent.xcodeproj; path = ../libsent/sent.xcodeproj; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				13C5372212E1F9FB0071E4ED /* AVFoundation.framework in Frameworks */,
 				13C5372912E1FA070071E4ED /* CoreAudio.framework in Frameworks */,
+				C1893D1E1CB7A9A600CCB9CA /* AudioToolbox.framework in Frameworks */,
 				77A68B4D77884E0CAD1E2622 /* libPods-JuliusSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +229,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1893D1D1CB7A9A600CCB9CA /* AudioToolbox.framework */,
 				C1945A371CA2772500FFD1B4 /* libz.tbd */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
