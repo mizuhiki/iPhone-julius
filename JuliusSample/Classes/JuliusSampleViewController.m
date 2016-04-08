@@ -8,113 +8,23 @@
 
 #import "JuliusSampleViewController.h"
 
-@interface JuliusSampleViewController ()
-- (void)recording;
-- (void)recognition;
-@end
-
-
 @implementation JuliusSampleViewController
 
-@synthesize recordButton;
-@synthesize textView;
-@synthesize HUD;
-@synthesize recorder;
-@synthesize julius;
-@synthesize filePath;
-@synthesize processing;
-
-
-#pragma mark -
-#pragma mark Actions
-
-- (IBAction)startOrStopRecording:(id)sender {
-	if (!processing) {
-		[self recording];
-
-		[recordButton setTitle:@"Stop" forState:UIControlStateNormal];
-
-	} else {
-		[recorder stop];
-
-		[recordButton setTitle:@"Record" forState:UIControlStateNormal];
-	}
-	
-	self.processing = !processing;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.julius = [[Julius alloc] init];
+//    self.julius.delegate = self;
+//    [self.julius startContinuousRecognizing];
 }
-
-
-#pragma mark -
-#pragma mark Private methods
-
-- (void)recording {
-	
-	// Create file path.
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"yMMddHHmmss"];
-	NSString *fileName = [NSString stringWithFormat:@"%@.wav", [formatter stringFromDate:[NSDate date]]];
-
-	self.filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
-
-	// Change Audio category to Record.
-	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
-
-	// Settings for AVAAudioRecorder.
-	NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
-							  [NSNumber numberWithUnsignedInt:kAudioFormatLinearPCM], AVFormatIDKey,
-							  [NSNumber numberWithFloat:16000.0], AVSampleRateKey,
-							  [NSNumber numberWithUnsignedInt:1], AVNumberOfChannelsKey,
-							  [NSNumber numberWithUnsignedInt:16], AVLinearPCMBitDepthKey,
-							  nil];
-
-	self.recorder = [[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:filePath] settings:settings error:nil];
-	recorder.delegate = self;
-
-	[recorder prepareToRecord];
-	[recorder record];
-}
-
-- (void)recognition {
-	if (!julius) {
-		self.julius = [Julius new];
-		julius.delegate = self;
-	}
-	
-	[julius recognizeRawFileAtPath:filePath];
-}
-
-
-#pragma mark -
-#pragma mark AVAudioRecorder delegate
-
-- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
-	if (flag) {
-		if (!HUD) {
-			self.HUD = [[MBProgressHUD alloc] initWithView:self.view];
-			HUD.labelText = @"Processing...";
-			[self.view addSubview:HUD];
-		}
-		
-		[HUD show:YES];
-		
-		[self performSelector:@selector(recognition) withObject:nil afterDelay:0.1];
-	}
-}
-
 
 #pragma mark -
 #pragma mark Julius delegate
 
 - (void)callBackResult:(NSArray *)results {
-	[HUD hide:YES];
-
 	// Show results.
-	textView.text = [results componentsJoinedByString:@""];
+	self.textView.text = [results componentsJoinedByString:@""];
 }
-
-
-#pragma mark -
-#pragma mark Memory management
-
 
 @end

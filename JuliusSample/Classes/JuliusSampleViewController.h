@@ -12,28 +12,10 @@
 #import <MBProgressHUD.h>
 #import "Julius.h"
 
-@interface JuliusSampleViewController : UIViewController<AVAudioRecorderDelegate, JuliusDelegate> {
-	
-	// UI
-	UIButton *recordButton;
-	UITextView *textView;
-	MBProgressHUD *HUD;
+@interface JuliusSampleViewController : UIViewController<AVAudioRecorderDelegate, JuliusDelegate>
 
-	AVAudioRecorder *recorder;
-	Julius *julius;
-	NSString *filePath;
-	BOOL processing;
-}
-
-@property (nonatomic, strong) IBOutlet UIButton *recordButton;
-@property (nonatomic, strong) IBOutlet UITextView *textView;
-@property (nonatomic, strong) MBProgressHUD *HUD;
-@property (nonatomic, strong) AVAudioRecorder *recorder;
-@property (nonatomic, strong) Julius *julius;
-@property (nonatomic, strong) NSString *filePath;
-@property (nonatomic, assign) BOOL processing;
-
-- (IBAction)startOrStopRecording:(id)sender;
+@property (nonatomic, retain) IBOutlet UITextView *textView;
+@property (nonatomic, retain) Julius *julius;
 
 @end
 
