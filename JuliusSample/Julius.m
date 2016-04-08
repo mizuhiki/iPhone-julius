@@ -89,13 +89,11 @@ static void output_result(Recog *recog_, void *data) {
 		/* checkout for recognition: build lexicon tree, allocate cache */
 		if (j_final_fusion(recog) == FALSE) {
 			NSLog(@"Error while setup work area for recognition");
-			j_recog_free(recog);
 			return nil;
 		}
 		
 		if (j_adin_init(recog) == FALSE) {
 			NSLog(@"Error while adin init");
-			j_recog_free(recog);
 			return nil;
 		}
 		
@@ -163,7 +161,6 @@ static void output_result(Recog *recog_, void *data) {
 
 - (void)dealloc {
 	j_recog_free(recog);
-
 }
 
 @end
