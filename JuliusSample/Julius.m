@@ -148,7 +148,13 @@ static void output_result(Recog *recog_, void *data) {
     }
     
     // $$$FIXME おそらく、別スレッドにして起動する必要がある
-    ret = j_recognize_stream(recog);
+    _recogThread = [[NSThread alloc] initWithTarget:self selector:@selector(recogThread:) object:nil];
+    [_recogThread start];
+}
+
+- (void)recogThread:(id)info
+{
+    int ret = j_recognize_stream(recog);
     if (ret == -1) {
         NSLog(@"Error in regocnize stream");
         return;

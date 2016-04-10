@@ -18,6 +18,7 @@
 
 	id<JuliusDelegate> __weak delegate;
 
+    NSThread *_recogThread;
 }
 
 @property (nonatomic, weak) id<JuliusDelegate> delegate;
