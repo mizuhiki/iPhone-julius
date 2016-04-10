@@ -25,8 +25,11 @@
 #pragma mark Julius delegate
 
 - (void)callBackResult:(NSArray *)results {
-	// Show results.
-	self.textView.text = [results componentsJoinedByString:@""];
+    // Show results.
+    __weak JuliusSampleViewController *weak_self = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weak_self.textView.text = [results componentsJoinedByString:@""];
+    });
 }
 
 @end

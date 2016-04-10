@@ -146,8 +146,7 @@ static void output_result(Recog *recog_, void *data) {
         NSLog(@"Error in open stream");
         return;
     }
-    
-    // $$$FIXME おそらく、別スレッドにして起動する必要がある
+
     _recogThread = [[NSThread alloc] initWithTarget:self selector:@selector(recogThread:) object:nil];
     [_recogThread start];
 }
