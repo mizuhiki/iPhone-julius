@@ -13,6 +13,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
     self.julius = [[Julius alloc] init];
     self.julius.delegate = self;
