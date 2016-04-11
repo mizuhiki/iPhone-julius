@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
-#import <MBProgressHUD.h>
+
 #import "Julius.h"
 
 @interface JuliusSampleViewController : UIViewController<AVAudioRecorderDelegate, JuliusDelegate>
